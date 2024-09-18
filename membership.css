@@ -1,0 +1,188 @@
+:root {
+    --main: #229100;
+    --bg: #fff;
+    --b: #191825;
+    --bshadow: 0.5rem 0.5rem 0 rgba(19, 138, 114, 0.2);
+    --tshadow: 0.4rem 0.4rem 0 rgba(25, 24, 37, 0.2);
+    --border: 0.2rem solid green;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "EB Garamont", "Inter", "Poppins", sans-serif;
+    background-color: var(--bg);
+    background: black;
+    /* min-height: 2000vh; */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1, 4rem 7%;
+    background-color: rgb(33, 32, 32);
+    /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3); */
+    /* border-bottom: 1px solid whitesmoke; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 100%,
+        rgba(255, 255, 255, 0) 15%
+    );
+    transition: 1s;
+}
+
+header.sticky .navbar {
+    padding: 1, 4rem 7%;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    /* background-color: white; */
+}
+
+.logo img {
+    margin-top: 14px;
+    width: 60px;
+    margin-left: 25px;
+    /* margin-bottom: 10px; */
+}
+
+.navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* margin: 0 1rem; */
+    padding-right: 64px;
+    /* antara 60 - 65 px */
+}
+
+.navbar-nav a:hover {
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.05rem;
+    border-bottom: 0.1rem solid rgb(192, 127, 0);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+    /* font-weight: bold; */
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.6);
+}
+/* header */
+.judul{
+    width: 550px;
+    height: 620px;
+    margin: auto;
+    color: white;
+}
+
+h4{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 100px; 
+    color: white;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 8px;
+    color: #8b8b8b;
+}
+
+form{
+    width: 200px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+form label{
+    display: flex;
+    width: auto;
+    margin-bottom: 0.25rem;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+form input{
+    width: 550px;
+    padding: 5px;
+}
+
+form .button{
+    margin-top: 1.5rem;
+    margin-left: 6px;
+    width: auto;
+}
+
+input[type="button"]{
+    width: 550px;
+    height: 35px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #474444;
+}
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer .sosmed{
+    padding: 1rem 0;
+}
+footer .sosmed a{
+    color: white;
+    margin: 1rem;
+}
+footer .sosmed a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link{
+    margin-bottom: 1.4rem;
+    font-size: 20px;
+}
+footer .link a{
+    color: white;
+    font-weight: bold;
+}
+footer .cred{
+    /* font-size: small; */
+    color: white;
+    padding-bottom: 10px;
+}
+footer .cred span{
+    color: rgb(164, 126, 59);
+}
+footer .Photo img{
+    width: 100px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="membership.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+     <!-- header + navbar -->
+    <!-- Nav Start -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="aboutsUs.png" alt="" />
+        </div>
+
+        <div class="navbar-nav">
+          <a href="#About Us"><b>About Us</b></a>
+          <a href="#Our Product"><b>Our Product</b></a>
+          <a href="/ourstore.html"><b>Our Store</b></a>
+          <a href="#Contact Us"><b>Contact Us</b></a>
+        </div>
+
+      </nav>
+    </header>
+    <!-- Nav End -->
+    <!-- end of header + navbar -->
+    <!-- about-us start -->
+    <div class="judul">
+            <h4>CREATE YOUR ACCOUNT</h4>
+            <h1>FILL ALL THE FORM BELOW THIS TO MAKE YOUR ID.</h1>
+
+        <form>
+        <label>FULL NAME</label>
+        <input type="text" placeholder="" id="fullname">
+        <label>GENDER</label>
+        <input type="text" placeholder="" id="gender">
+        <label>EMAIL</label>
+        <input type="email" placeholder="" id="email">
+        <label>PASSWORD</label>
+        <input type="password" placeholder="" id="password">
+        <label>PHONE NUMBER</label>
+        <input type="text" placeholder="" id="number">
+        <label>ADDRESS</label>
+        <input type="text" placeholder="" id="address">
+        <div class="button">
+            <input type="submit" name="Submit" value="C R E A T E" id="submit" class="input" onclick="validate()">
+        </div>
+        
+        </form>
+    </div>
+    <!-- end of about-us -->
+    <!-- footer start -->
+    <footer>
+        <div class="Photo">
+          <img src="aboutsUs.png" alt="" />
+        </div>
+  
+        <div class="sosmed">    
+          <a href="#"><i data-feather="twitter"></i></a>
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="linkedin"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="cred">
+          <h2>By <span>Group 4</span>. | &copy; 2023.</h2>
+        </div>
+      </footer>
+    <!-- end of footer -->
+    <script>
+        feather.replace();
+      </script>
+</body>
+<script src="membership.js"></script>
+</html>

@@ -1,0 +1,272 @@
+:root {
+    --main: #229100;
+    --bg: #fff;
+    --b: #191825;
+    --bshadow: 0.5rem 0.5rem 0 rgba(19, 138, 114, 0.2);
+    --tshadow: 0.4rem 0.4rem 0 rgba(25, 24, 37, 0.2);
+    --border: 0.2rem solid green;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "EB Garamont", "Inter", "Poppins", sans-serif;
+    background-color: var(--bg);
+    background: black;
+    /* min-height: 2000vh; */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1, 4rem 7%;
+    background-color: rgb(33, 32, 32);
+    /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3); */
+    /* border-bottom: 1px solid whitesmoke; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 100%,
+        rgba(255, 255, 255, 0) 15%
+    );
+    transition: 1s;
+}
+
+header.sticky .navbar {
+    padding: 1, 4rem 7%;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    /* background-color: white; */
+}
+
+.logo img {
+    margin-top: 14px;
+    width: 60px;
+    margin-left: 25px;
+    /* margin-bottom: 10px; */
+}
+
+.navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* margin: 0 1rem; */
+    padding-right: 64px;
+    /* antara 60 - 65 px */
+}
+
+.navbar-nav a:hover {
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.05rem;
+    border-bottom: 0.1rem solid rgb(192, 127, 0);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+    /* font-weight: bold; */
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.6);
+}
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.heading{
+    text-align: center;
+    color: #8b5f36;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+.heading span{
+    text-align: center;
+    color: white;
+}
+.kopi img{
+    height: 350px;
+    width: 550px;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+.kopisusu img{
+    height: 350px;
+    width: 550px;
+    border-radius: 1rem;
+    margin-top: 6rem;
+    margin-left: 8rem;
+}
+.text-kopi h3{
+    font-family: 'Port Lligat Slab', serif;
+    margin-left: 6.5rem;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1rem;
+}
+.text-kopi .description p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 6.5rem;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.text-kopi .price p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 6.5rem;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #d0b194 0%, #Cea884 46%, #7b512b 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-kopisusu h3{
+    font-family: 'Port Lligat Slab', serif;
+    margin-left: 15rem;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1rem;
+}
+.text-kopisusu .description p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15rem;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.text-kopisusu .price p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 15rem;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #d0b194 0%, #Cea884 46%, #7b512b 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.teh img{
+    height: 398px;
+    width: 346px;
+    border-radius: 1rem;
+    margin-left: 10rem;
+}
+.pastries img{
+    height: 358px;
+    width: 346px;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 27rem;
+}
+.text-teh h3{
+    font-family: 'Port Lligat Slab', serif;
+    font-size: 24px;
+    margin-left: 7rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.text-teh .description p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-left: 7rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.text-teh .price p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 7rem;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #d0b194 0%, #Cea884 46%, #7b512b 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-pastries h3{
+    font-family: 'Port Lligat Slab', serif;
+    font-size: 24px;
+    margin-left: 17.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.text-pastries .description p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-left: 17.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.text-pastries .price p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 17.5rem;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #d0b194 0%, #Cea884 46%, #7b512b 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+    padding: 1rem 0;
+}
+footer .sosmed{
+    padding: 1rem 0;
+}
+footer .sosmed a{
+    color: white;
+    margin: 1rem;
+}
+footer .sosmed a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link{
+    margin-bottom: 1.4rem;
+    font-size: 20px;
+}
+footer .link a{
+    color: white;
+    font-weight: bold;
+}
+footer .cred{
+    /* font-size: small; */
+    color: white;
+    padding-bottom: 10px;
+}
+footer .cred span{
+    color: rgb(164, 126, 59);
+}
+footer .Photo img{
+    width: 100px;
+}

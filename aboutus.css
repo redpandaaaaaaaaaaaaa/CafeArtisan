@@ -1,0 +1,183 @@
+:root {
+    --main: #229100;
+    --bg: #fff;
+    --b: #191825;
+    --bshadow: 0.5rem 0.5rem 0 rgba(19, 138, 114, 0.2);
+    --tshadow: 0.4rem 0.4rem 0 rgba(25, 24, 37, 0.2);
+    --border: 0.2rem solid green;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "EB Garamont", "Inter", "Poppins", sans-serif;
+    background-color: var(--bg);
+    background: black;
+    /* min-height: 2000vh; */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1, 4rem 7%;
+    background-color: rgb(33, 32, 32);
+    /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3); */
+    /* border-bottom: 1px solid whitesmoke; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 100%,
+        rgba(255, 255, 255, 0) 15%
+    );
+    transition: 1s;
+}
+
+header.sticky .navbar {
+    padding: 1, 4rem 7%;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    /* background-color: white; */
+}
+
+.logo img {
+    margin-top: 14px;
+    width: 60px;
+    margin-left: 25px;
+    /* margin-bottom: 10px; */
+}
+
+.navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* margin: 0 1rem; */
+    padding-right: 64px;
+    /* antara 60 - 65 px */
+}
+
+.navbar-nav a:hover {
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.05rem;
+    border-bottom: 0.1rem solid rgb(192, 127, 0);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+    /* font-weight: bold; */
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.6);
+}
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.heading{
+    text-align: center;
+    color: #6A4D33;
+    font-size: 4rem;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+.heading span{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.about{
+    padding-top: 10rem;
+    padding-bottom: 42px;
+    background: rgba(52,25,0,1);
+    background: radial-gradient(ellipse,rgba(52,25,0,1) 18%, rgba(52,25,0,1) 50%, rgb(0, 0, 0) 72%);
+    background-position: center top;
+    size: auto;
+}
+.about-img img{
+    height: 350px;
+    width: 500px;
+    border-radius: 1rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+}
+.about-text p{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+}
+.slogan p{
+    margin-top: 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.brand p{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer .sosmed{
+    padding: 1rem 0;
+}
+footer .sosmed a{
+    color: white;
+    margin: 1rem;
+}
+footer .sosmed a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link a:hover{
+    color: rgb(164, 126, 59);
+}
+footer .link{
+    margin-bottom: 1.4rem;
+    font-size: 20px;
+}
+footer .link a{
+    color: white;
+    font-weight: bold;
+}
+footer .cred{
+    /* font-size: small; */
+    color: white;
+    padding-bottom: 10px;
+}
+footer .cred span{
+    color: rgb(164, 126, 59);
+}
+footer .Photo img{
+    width: 100px;
+}
